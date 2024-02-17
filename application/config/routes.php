@@ -57,6 +57,7 @@ $route['auth/logout']['POST'] = 'auth/logout';
 $route['admin'] = 'AdminController/index';
 $route['admin/login'] = 'AdminController/login';
 
+$route['kontol'] = 'IndexController/index';
 // CRUD DOSEN
 $route['admin/dosens'] = 'AdminController/dosens';
 $route['admin/dosens/addDosen']['POST'] = 'AdminController/addDosen';
