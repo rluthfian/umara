@@ -14,9 +14,6 @@ class Dashboard extends CI_Controller
 	}
 	public function dosen()
 	{
-		echo '<pre>';
-		print_r("eeq");
-		exit();
 		$dosens = $this->dashboard_model->dosens();
 		$kaprodi = $this->dashboard_model->kaprodi();
 		$data = [
