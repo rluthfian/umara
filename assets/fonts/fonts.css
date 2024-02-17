@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat-light';
+    src: url(montserrat-300.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: montserrat-bold;
+    src: url(montserratBold.ttf);
+}
