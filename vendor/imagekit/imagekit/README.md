@@ -10,6 +10,7 @@ ImageKit is complete media storage, optimization, and transformation solution th
 - [Key Features](#key-features)
 - [Requirements](#requirements)
 - [Version Support](#version-support)
+- [Breaking changes](#breaking-changes)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Getting Started](#getting-started)
@@ -44,9 +45,19 @@ ImageKit is complete media storage, optimization, and transformation solution th
 ## Version Support
 | SDK Version | PHP 5.4 | PHP 5.5 | PHP 5.6 | PHP 7.x | PHP 8.x |
 |-------------|---------|---------|---------|---------|---------|
+| 4.x         | ❌     | ❌      | ✔️       | ✔️     |✔️      |
 | 3.x         | ❌     | ❌      | ✔️       | ✔️     |✔️      |
 | 2.x         | ❌     | ❌      | ✔️       | ✔️     |✔️      |
 | 1.x         | ❌     | ✔️      | ✔️       | ✔️     |✔️      |
+
+## Breaking changes
+
+### Upgrading from 3.x to 4.x version
+
+1. Overlay syntax update
+
+* In version 4.0.0, we've removed the old overlay syntax parameters for transformations, such as `oi`, `ot`, `obg`, and [more](https://docs.imagekit.io/features/image-transformations/overlay). These parameters are deprecated and will start returning errors when used in URLs. Please migrate to the new layers syntax that supports overlay nesting, provides better positional control, and allows more transformations at the layer level. You can start with [examples](https://docs.imagekit.io/features/image-transformations/overlay-using-layers#examples) to learn quickly.
+* You can migrate to the new layers syntax using the `raw` transformation parameter.
 
 ## Installation
 
@@ -252,7 +263,7 @@ This section covers the basics:
 * [Image enhancement & color manipulation](#2-image-enhancement-and-color-manipulation)
 * [Resizing images and videos](#3-resizing-images-and-videos)
 * [Quality manipulation](#4-quality-manipulation)
-* [Adding overlays to images](#5-adding-overlays-to-images)
+* [Adding overlays](#5-adding-overlays)
 * [Signed URL](#6-signed-url)
 
 The PHP SDK gives a name to each transformation parameter e.g. `height` for `h` and `width` for `w` parameter. It makes your code more readable. See the [Full list of supported transformations](#list-of-supported-transformations).
@@ -362,34 +373,111 @@ $imageURL = $imageKit->url(array(
 https://ik.imagekit.io/your_imagekit_id/tr:q-40/default-image.jpg
 ```
 
-### 5. Adding overlays to images
-ImageKit.io  allows overlaying [images](https://docs.imagekit.io/features/image-transformations/overlay#image-overlay) or [text](https://docs.imagekit.io/features/image-transformations/overlay#text-overlay) over other images and videos for watermarking or creating dynamic assets using custom text.
+### 5. Adding overlays
 
-#### Example
+ImageKit.io enables you to apply overlays to [images](https://docs.imagekit.io/features/image-transformations/overlay-using-layers) and [videos](https://docs.imagekit.io/features/video-transformation/overlay) using the raw parameter with the concept of [layers](https://docs.imagekit.io/features/image-transformations/overlay-using-layers#layers). The raw parameter facilitates incorporating transformations directly in the URL. A layer is a distinct type of transformation that allows you to define an asset to serve as an overlay, along with its positioning and additional transformations.
+
+#### Text as overlays
+
+You can add any text string over a base video or image using a text layer (l-text).
+
+For example:
+
 ```php
 $imageURL = $imageKit->url(array(
     'path' => '/default-image.jpg',
     'urlEndpoint' => 'https://ik.imagekit.io/your_imagekit_id'
     
-    // It means first resize the image to 400x300 and then rotate 90 degree
     'transformation' => [
         [
             'height' => '300',
-            'width' => '300',
-            'overlayImage' => 'default-image.jpg',
-            'overlaywidth' => '100',
-            'overlayX' => '0',
-            'overlayImageBorder' => '10_CDDC39' // 10px border of color CDDC39
+            'width' => '400',
+            'raw': "l-text,i-Imagekit,fs-50,l-end"
         ]
     ]
 ));
 ```
-#### Response
+#### Sample Result URL
 ```
-https://ik.imagekit.io/your_imagekit_id/endpoint/tr:w-300,h-300,oi-default-image.jpg,ow-100,ox-0,oib-10_CDDC39/default-image.jpg
+https://ik.imagekit.io/your_imagekit_id/tr:h-300,w-400,l-text,i-Imagekit,fs-50,l-end/default-image.jpg
 ```
 
-### 6. Signed URL
+#### Image as overlays
+
+You can add an image over a base video or image using an image layer (l-image).
+
+For example:
+
+```php
+$imageURL = $imageKit->url(array(
+    'path' => '/default-image.jpg',
+    'urlEndpoint' => 'https://ik.imagekit.io/your_imagekit_id'
+    
+    'transformation' => [
+        [
+            'height' => '300',
+            'width' => '400',
+            'raw': "l-image,i-default-image.jpg,w-100,b-10_CDDC39,l-end"
+        ]
+    ]
+));
+```
+#### Sample Result URL
+```
+https://ik.imagekit.io/your_imagekit_id/tr:h-300,w-400,l-image,i-default-image.jpg,w-100,b-10_CDDC39,l-end/default-image.jpg
+```
+
+#### Solid color blocks as overlays
+
+You can add solid color blocks over a base video or image using an image layer (l-image).
+
+For example:
+
+```php
+$imageURL = $imageKit->url(array(
+    'path' => '/img/sample-video.mp4',
+    'urlEndpoint' => 'https://ik.imagekit.io/your_imagekit_id'
+    
+    'transformation' => [
+        [
+            'height' => '300',
+            'width' => '400',
+            'raw': "l-image,i-ik_canvas,bg-FF0000,w-300,h-100,l-end"
+        ]
+    ]
+));
+```
+#### Sample Result URL
+```
+https://ik.imagekit.io/your_imagekit_id/tr:h-300,w-400,l-image,i-ik_canvas,bg-FF0000,w-300,h-100,l-end/img/sample-video.mp4
+```
+
+### 6. Arithmetic expressions in transformations
+
+ImageKit allows use of [arithmetic expressions](https://docs.imagekit.io/features/arithmetic-expressions-in-transformations) in certain dimension and position-related parameters, making media transformations more flexible and dynamic.
+
+For example:
+
+```php
+$imageURL = $imageKit->url(array(
+    'path' => '/default-image.jpg',
+    'urlEndpoint' => 'https://ik.imagekit.io/your_imagekit_id'
+    'transformation' => [
+        [
+            "height": "ih_div_2",
+            "width": "iw_div_4",
+            "border": "cw_mul_0.05_yellow"
+        ]
+    ]
+));
+```
+
+#### Sample Result URL
+```
+https://ik.imagekit.io/your_imagekit_id/default-image.jpg?tr=w-iw_div_4,h-ih_div_2,b-cw_mul_0.05_yellow
+``
+
+### 7. Signed URL
 
 For example, the signed URL expires in 300 seconds with the default URL endpoint and other query parameters.
 For a detailed explanation of the signed URL, refer to this [documentation](https://docs.imagekit.io/features/security/signed-urls).
@@ -445,35 +533,6 @@ If you want to generate transformations in your application and add them to the 
 | rotation | rt |
 | blur | bl |
 | named | n |
-| overlayX | ox |
-| overlayY | oy |
-| overlayFocus | ofo |
-| overlayHeight | oh |
-| overlayWidth | ow |
-| overlayImage | oi |
-| overlayImageTrim | oit |
-| overlayImageAspectRatio | oiar |
-| overlayImageBackground | oibg |
-| overlayImageBorder | oib |
-| overlayImageDPR | oidpr |
-| overlayImageQuality | oiq |
-| overlayImageCropping | oic |
-| overlayImageFocus | oifo |
-| overlayImageTrim | oit |
-| overlayText | ot |
-| overlayTextFontSize | ots |
-| overlayTextFontFamily | otf |
-| overlayTextColor | otc |
-| overlayTextTransparency | oa |
-| overlayAlpha | oa |
-| overlayTextTypography | ott |
-| overlayBackground | obg |
-| overlayTextEncoded | ote |
-| overlayTextWidth | otw |
-| overlayTextBackground | otbg |
-| overlayTextPadding | otp |
-| overlayTextInnerAlignment | otia |
-| overlayRadius | or |
 | progressive | pr |
 | lossless | lo |
 | trim | t |
@@ -485,6 +544,8 @@ If you want to generate transformations in your application and add them to the 
 | effectUSM | e-usm |
 | effectContrast | e-contrast |
 | effectGray | e-grayscale |
+| effectShadow | e-shadow |
+| effectGradient | e-gradient |
 | original | orig |
 | raw | `replaced by the parameter value` |
 
@@ -587,6 +648,15 @@ $uploadFile = $imageKit->uploadFile([
     "overwriteAITags" => true,      // set to false in order to preserve overwriteAITags
     "overwriteTags" => true,
     "overwriteCustomMetadata" => true,
+    'transformation' => [ 
+        'pre' => 'l-text,i-Imagekit,fs-50,l-end', 
+        'post' => [
+            [ 
+                'type' => 'transformation', 
+                'value' => 'h-100' 
+            ]
+        ]
+    ],
     // "customMetadata" => [
     //         "SKU" => "VS882HJ2JD",
     //         "price" => 599.99,
