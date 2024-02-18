@@ -82,3 +82,5 @@ $route['info-publikasi'] = 'dashboard/info_publikasi';
 $route['arsip'] = 'dashboard/arsip';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['about'] = 'dashboard/about';
+

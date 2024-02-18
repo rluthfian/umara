@@ -273,15 +273,19 @@
         </div>
 
         <div class="bottom-content container-fluid" id="about-us">
-            <div class="row">
-                <div class="col">
+            <div class="row justify-content-center">
+                <div class="col-9 justify-content-center">
                     <div class="row">
                         <h1 class="title-content">
                             Tentang Kami </h1>
+                        <p class="">PT. Umara Multi Bisnis merupakan perusahaan pendistribusian produk yang menjadi penghubung atau jembatan antara produsen kepada agen, merchant maupun konsumen akhir.​
+
+                            PT. Umara Multi Bisnis telah berdiri secara resmi pada tanggal 11 Januari 2021, dan sudah menyebarkan berbagai macam produk ke seluruh Indonesia.</p>
                     </div>
-                    <div class="row">
-                        <div class="line-small"></div>
+                    <div class="text-center">
+                        <a href="{{base_url('about')}}" class="custom-btn btn-7"><span style="letter-spacing:0.15em">Company Profile</span></a>
                     </div>
+
                     <div class="row">
                         <div id="slide-timeline-cont">
 
@@ -344,66 +348,24 @@
                     </div>
                 </div>
             </div>
-            <div class="row darker" id="vision-mission">
-                <div class="col">
-
-                    <div class="row">
-                        <div class="col">
-                            <h1 class="title-content">
-                                Our Vision & Mission </h1>
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <div class="col-sm-6 vm-cont">
-                            <div>
-                                <img class="vm-img" src="https://www.tigaraksa.co.id/upload/visimisi/addf9aab2e765d16d6753af2eec31f48.jpg" />
-                                <div class="vm-desc">
-                                    <h2>
-                                        Vision </h2>
-                                    <p>
-                                        To&nbsp;<span class="bold">Succeed</span>&nbsp;and&nbsp;<span class="bold">Excel</span>&nbsp;<br />as a <span class="bold">Market Driven</span> Sales &amp; Distribution Organization
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 vm-cont">
-                            <div>
-                                <img class="vm-img" src="https://www.tigaraksa.co.id/upload/visimisi/3550061517335bc099bd7f00cba53e07.jpeg" />
-                                <div class="vm-desc">
-                                    <h2>
-                                        Mission </h2>
-                                    <p>
-                                        <span class="bold">Creating Value</span> to Stakeholders
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-            </div>
-            <div class="row justify-content-center" id="core-values">
+            <div class="row darker justify-content-center" id="core-values">
                 <div class="col-xl-10 col-md-12">
 
                     <div class="row">
                         <div class="col">
                             <h1 class="title-content">
-                                Core Values </h1>
+                                Produsen Kami </h1>
                         </div>
                     </div>
                     <div class="row" id="cv-item-cont">
 
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="cv-item-ico">
-                                <img src="https://www.tigaraksa.co.id/upload/core_values/d38211b076aaa2f6b9f371eacede7dde.png" />
+                                <img class="" src="https://umaramultibisnis.com/wp-content/uploads/2023/03/Logo-PT.-Holycat-Laboratory-Indonesia-2.jpg" />
                             </div>
                             <div class="cv-item-title">
                                 <h2>
-                                    Integrity
+                                    PT Holly Labs Indonesia
                                 </h2>
                             </div>
                             <div class="cv-item-desc">
@@ -414,11 +376,11 @@
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="cv-item-ico">
-                                <img src="https://www.tigaraksa.co.id/upload/core_values/499112f50a71ed83cc85aa457af4fe12.png" />
+                                <img src="https://umaramultibisnis.com/wp-content/uploads/2023/03/Logo-Fijarindo.jpg" />
                             </div>
                             <div class="cv-item-title">
                                 <h2>
-                                    Independence
+                                    Fijarindo Fermented
                                 </h2>
                             </div>
                             <div class="cv-item-desc">
@@ -429,11 +391,11 @@
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="cv-item-ico">
-                                <img src="https://www.tigaraksa.co.id/upload/core_values/f4beaf682f1d0d983fdc419a277f49b9.png" />
+                                <img src="https://umaramultibisnis.com/wp-content/uploads/2023/03/your-logo-here-copy2.jpg" />
                             </div>
                             <div class="cv-item-title">
                                 <h2>
-                                    Innovation
+                                    Join With Us
                                 </h2>
                             </div>
                             <div class="cv-item-desc">
@@ -444,104 +406,6 @@
                         </div>
 
 
-                    </div>
-
-                </div>
-            </div>
-            <div class="row darker" id="core-com">
-                <div class="col">
-
-                    <div class="row">
-                        <div class="col">
-                            <h1 class="title-content">
-                                Core Competencies </h1>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-xl-9 col-md-11" id="ccom-item-cont">
-
-                            <div class="row">
-
-                                <div class="col-12">
-                                    <div class="row ccom-item">
-                                        <div>
-                                            <img src="https://www.tigaraksa.co.id/upload/core_competencies/849c00595b833e860c84fea767ef0cc0.png" />
-                                        </div>
-                                        <div class="col">
-                                            <h2 class="ccom-item-title">
-                                                KNOW YOUR CUSTOMER
-                                            </h2>
-                                            <p class="ccom-item-desc">
-                                                Competencies in knowing the customer and their needs, and committing to deliver quality products and services in fulfilling the customer needs. This applies to internal as well as external customers.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row ccom-item">
-                                        <div>
-                                            <img src="https://www.tigaraksa.co.id/upload/core_competencies/50368a831e061c0d3727d0bd3e0ef258.png" />
-                                        </div>
-                                        <div class="col">
-                                            <h2 class="ccom-item-title">
-                                                RELATIONSHIP MANAGEMENT
-                                            </h2>
-                                            <p class="ccom-item-desc">
-                                                Competencies in building self-credibility through: growing empathy, willingness to give feedbacks, open communication, and also developing connection with others.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row ccom-item">
-                                        <div>
-                                            <img src="https://www.tigaraksa.co.id/upload/core_competencies/0faf6b3ba928619626b92128099d69bf.png" />
-                                        </div>
-                                        <div class="col">
-                                            <h2 class="ccom-item-title">
-                                                SUPPLY CHAIN MANAGEMENT
-                                            </h2>
-                                            <p class="ccom-item-desc">
-                                                Competencies in planning, organizing, analyzing and controlling the flow of products, cash and information in order to produce quality and satisfying outputs for customers.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row ccom-item">
-                                        <div>
-                                            <img src="https://www.tigaraksa.co.id/upload/core_competencies/5eb9c1fd2bc026b649390c9259fb2cda.png" />
-                                        </div>
-                                        <div class="col">
-                                            <h2 class="ccom-item-title">
-                                                INNOVATION
-                                            </h2>
-                                            <p class="ccom-item-desc">
-                                                Competencies to think creatively so that capable of generating new ideas for producing outputs or new-useful solution for customers.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row ccom-item">
-                                        <div>
-                                            <img src="https://www.tigaraksa.co.id/upload/core_competencies/dd41beef665c6aebb6555b7afda176a9.png" />
-                                        </div>
-                                        <div class="col">
-                                            <h2 class="ccom-item-title">
-                                                KNOWLEDGE MANAGEMENT
-                                            </h2>
-                                            <p class="ccom-item-desc">
-                                                Competencies in creating, utilizing and distributing knowledge in order to generate useful outputs for customers.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
                     </div>
 
                 </div>
