@@ -25,7 +25,7 @@ class Dashboard extends CI_Controller
 	}
 
 	public function about(){
-		return view('dashboard/about')
+		return view('dashboard/about');
 	}
 
 	public function penelitian()

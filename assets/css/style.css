@@ -119,6 +119,7 @@ span.red {
 }
 .header-top .trs-logo img {
     position: relative;
+    width: 21em;
     left: 2em;
     transition: all .4s;
 }
@@ -153,7 +154,7 @@ span.red {
     transition: all .4s;
 }
 .header-top.scrolled .trs-logo img {
-    width: 6em;
+    width: 15em;
     transition: all .4s;
 }
 .header-top.scrolled .menu-ico img {
@@ -598,7 +599,7 @@ span.red {
     margin: auto;
     padding: 30px 0;
     text-align: center;
-    color: #393C8F;
+    color: #0cb353;
     letter-spacing: 1.2pt;
 }
 .bottom-content .menu-cont {
@@ -681,7 +682,7 @@ span.red {
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 10em;
+    height: 15em;
     overflow-x: hidden;
 }
 /* #about-us #slide-timeline-cont > .row > .col {
@@ -707,108 +708,13 @@ span.red {
     text-align: center;
 }
 #about-us #slide-timeline-cont .timeline-item:before, #about-us #slide-timeline-cont .timeline-item:after {
-    border-top: 2px solid #4ABFA5;
+    border-top: 2px solid #FCB040;
     content: "";
     width: 100%;
     position: absolute;
     top: 50%;
     z-index: 0;
 }
-
-button {
-    margin: 20px;
-  }
-  .custom-btn {
-    width: 200px;
-    height: 75px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 15px 35px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-  }
-  
-  .btn-7 {
-    background: linear-gradient(0deg, rgb(49, 129, 210) 0%, rgb(6, 72, 129) 100%);
-      line-height: 75px;
-      padding: 0;
-      border: none;
-    }
-    .btn-7 span {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-    .btn-7:before,
-    .btn-7:after {
-      position: absolute;
-      content: "";
-      right: 0;
-      bottom: 0;
-      background: rgba(6, 72, 129);
-      box-shadow:
-       -7px -7px 20px 0px rgba(255,255,255,.9),
-       -4px -4px 5px 0px rgba(255,255,255,.9),
-       7px 7px 20px 0px rgba(0,0,0,.2),
-       4px 4px 5px 0px rgba(0,0,0,.3);
-      transition: all 0.3s ease;
-    }
-    .btn-7:before{
-       height: 0%;
-       width: 2px;
-    }
-    .btn-7:after {
-      width: 0%;
-      height: 2px;
-    }
-    .btn-7:hover{
-      color: rgba(49, 129, 210);
-      background: transparent;
-    }
-    .btn-7:hover:before {
-      height: 100%;
-    }
-    .btn-7:hover:after {
-      width: 100%;
-    }
-    .btn-7 span:before,
-    .btn-7 span:after {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 0;
-      background: rgba(49, 129, 210);
-      box-shadow:
-       -7px -7px 20px 0px rgba(255,255,255,.9),
-       -4px -4px 5px 0px rgba(255,255,255,.9),
-       7px 7px 20px 0px rgba(0,0,0,.2),
-       4px 4px 5px 0px rgba(0,0,0,.3);
-      transition: all 0.3s ease;
-    }
-    .btn-7 span:before {
-      width: 2px;
-      height: 0%;
-    }
-    .btn-7 span:after {
-      height: 2px;
-      width: 0%;
-    }
-    .btn-7 span:hover:before {
-      height: 100%;
-    }
-    .btn-7 span:hover:after {
-      width: 100%;
-    }
 /* #about-us #slide-timeline-cont .timeline-ico:after {
     text-align: center;
 } */
@@ -821,14 +727,13 @@ button {
     position: absolute;
     font-family: "Gotham-Book";
     color: #333;
-    font-size:1.5rem;
-    top: -35px;
+    top: -25px;
     transition: all .5s;
 }
 #about-us #slide-timeline-cont .timeline-ico {
     display: block;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border-radius: 100px;
     background-color: #FCB040;
     /* margin: auto; */
@@ -850,18 +755,18 @@ button {
     transition: all .3s;
 }
 #about-us #slide-timeline-cont .timeline-item.focus .timeline-ico {
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     background-color: #fff;
     /* padding: 10px; */
     transition: all .3s;
 }
 #about-us #slide-timeline-cont .timeline-item.focus .timeline-ico:empty {
-    background-color: #393C8F;
+    background-color: #03AD43;
 }
 #about-us #slide-timeline-cont .timeline-item.focus .timeline-title {
     font-family: "Gotham-Bold";
-    color: #393C8F;
+    color: #03AD43;
     bottom: 100px;
     transition: all .5s;
 }
@@ -889,7 +794,6 @@ button {
     position: relative;
     /* height: 120px; */
     overflow: hidden;
-    border-radius:5px;
 }
 /* #about-us #slide-desc > div {
     overflow: hidden;
@@ -1006,9 +910,8 @@ button {
     width: 60%;
     /* height: 200px; */
     border-radius: 300px;
-    /* padding: 50px; */
-    overflow: hidden;
-    background-color: #F5F5F5;
+    padding: 50px;
+    background-color: #FCB040;
     margin-bottom: 30px !important;
     transition: all .5s;
     margin: auto;

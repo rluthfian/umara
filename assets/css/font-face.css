@@ -1,0 +1,85 @@
+/* @font-face {
+  font-family: "Gotham-Black";
+  src: url(fonts/Gotham-Black.otf);
+}
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(fonts/Gotham-Bold.otf);
+}
+@font-face {
+  font-family: "Gotham-Light";
+  src: url(fonts/Gotham-Light.otf);
+}
+@font-face {
+  font-family: "Gotham-Thin";
+  src: url(fonts/Gotham-Thin.otf);
+}
+@font-face {
+  font-family: "Gotham-Book";
+  src: url(fonts/GothamBook.ttf);
+}
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url(fonts/GothamMedium.ttf);
+} */
+
+@font-face {
+  font-family: "Gotham-Black";
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  /* src: url('fonts/Gotham-Black.otf') format('truetype'); */
+  /* src: url('fonts/Gotham-Black.woff2') format('WOFF2'); */
+  src: url("https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/fonts/GothamRounded-Bold.woff2")
+    format("WOFF2");
+}
+@font-face {
+  font-family: "Gotham-Bold";
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  /* src: url('fonts/Gotham-Bold.otf') format('truetype'); */
+  /* src: url('fonts/Gotham-Bold.woff2') format('WOFF2'); */
+  src: url("https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/fonts/GothamRounded-Bold.woff2")
+    format("WOFF2");
+}
+@font-face {
+  font-family: "Gotham-Light";
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  /* src: url('fonts/Gotham-Light.otf') format('truetype'); */
+  /* src: url('fonts/Gotham-Light.woff2') format('WOFF2'); */
+  src: url("https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/fonts/GothamRounded-Light.woff2")
+    format("WOFF2");
+}
+@font-face {
+  font-family: "Gotham-Thin";
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  /* src: url('fonts/Gotham-Thin.otf') format('truetype'); */
+  /* src: url('fonts/Gotham-Thin.woff2') format('WOFF2'); */
+  src: url("https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/fonts/GothamRounded-Light.woff2")
+    format("WOFF2");
+}
+@font-face {
+  font-family: "Gotham-Book";
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  /* src: url('fonts/GothamBook.ttf') format('truetype'); */
+  /* src: url('fonts/GothamBook.woff2') format('WOFF2'); */
+  src: url("https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/fonts/GothamRounded-Book.woff2")
+    format("WOFF2");
+}
+@font-face {
+  font-family: "Gotham-Medium";
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  /* src: url('fonts/GothamMedium.ttf') format('truetype'); */
+  /* src: url('fonts/GothamMedium.woff2') format('WOFF2'); */
+  src: url("https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/fonts/GothamRounded-Medium.woff2")
+    format("WOFF2");
+}
