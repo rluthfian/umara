@@ -41,7 +41,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <title> <?php echo $__env->yieldContent('title'); ?> </title>
+    <title> PT Umara Multi Bisnis - <?php echo $__env->yieldContent('title'); ?> </title>
     <?php echo $__env->make('layouts.head', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 </head>

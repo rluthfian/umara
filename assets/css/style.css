@@ -8,6 +8,22 @@ body {
     overflow-x: hidden;
 }
 
+.fs-1{
+    font-size: 1rem;
+}
+.fs-2{
+    font-size: 1.25rem;
+}
+.fs-3{
+    font-size: 1.5rem;
+}
+.fs-4{
+    font-size: 1.75rem;
+}
+.fs-5{
+    font-size: 2rem;
+}
+
 /* General */
 .btn-shadow {
     -webkit-box-shadow: 15px 10px 58px -10px rgba(0,0,0,0.75);
@@ -119,7 +135,7 @@ span.red {
 }
 .header-top .trs-logo img {
     position: relative;
-    width: 21em;
+    width: 10em;
     left: 2em;
     transition: all .4s;
 }
@@ -154,7 +170,7 @@ span.red {
     transition: all .4s;
 }
 .header-top.scrolled .trs-logo img {
-    width: 15em;
+    width: 6em;
     transition: all .4s;
 }
 .header-top.scrolled .menu-ico img {
@@ -570,7 +586,7 @@ span.red {
 
 /* Main Content */
 .bottom-content {
-    background-color: #fff;
+    background-color: #f9f9f9;
     position: relative;
     padding-bottom: 150px;
     overflow-x: hidden;
@@ -1742,7 +1758,7 @@ span.red {
 
 /* Footer */
 .footer-bottom {
-    background-color: #4faa41;
+    background-color: #fff;
     overflow: hidden;
 }
 .footer-bottom .text-copyright {
@@ -1751,7 +1767,7 @@ span.red {
 .footer-bottom a {
     color: #dcd6ce;
     transition: all .3s;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 .footer-bottom a:hover {
     color: #fff;
@@ -1759,6 +1775,10 @@ span.red {
 }
 .footer-bottom a p {
     margin: 10px;
+}
+.footer-bottom ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
 }
 .footer-bottom .privacy-statement {
     text-align: left;

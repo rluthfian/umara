@@ -1,4 +1,5 @@
 <script src="<?php echo e(assets_url('js/jquery-3.3.1.min.js')); ?>"></script>
+<script src="<?php echo e(assets_url('js/fontawesome.min.js')); ?>"></script>
 <script src="<?php echo e(assets_url('js/bootstrap.min.js')); ?>"></script>
 <script src="<?php echo e(assets_url('js/slick/slick.min.js')); ?>"></script>
 <script src="<?php echo e(assets_url('js/slider.js')); ?>"></script>
