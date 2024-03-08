@@ -5,19 +5,19 @@
    <div class="carousel-cont">
       <div class="carousel">
          <div class="carousel-slide-cont">
-            <div class="carousel-slide-bg desktop" style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://www.tigaraksa.co.id/upload/carousel/f285273a83dd905d6437a7ac1f9817ae.jpg');"></div>
-            <div class="carousel-slide-bg mobile" style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://www.tigaraksa.co.id/upload/carousel/f285273a83dd905d6437a7ac1f9817ae.jpg');"></div>
+            <div class="carousel-slide-bg desktop" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.tigaraksa.co.id/upload/carousel/f285273a83dd905d6437a7ac1f9817ae.jpg');"></div>
+            <div class="carousel-slide-bg mobile" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.tigaraksa.co.id/upload/carousel/f285273a83dd905d6437a7ac1f9817ae.jpg');"></div>
             <img class="carousel-slide-img" src="https://www.tigaraksa.co.id/upload/carousel/f285273a83dd905d6437a7ac1f9817ae.jpg" />
             <div class="carousel-desc">
                <img src="https://www.tigaraksa.co.id/upload/carousel/icon/9e289a327a3fdd650da5b300c2486df9.png" class="home-icon" />
-               <h2><strong>An Independent Sales and Distribution </strong></h2>
-               <h2><strong>Company with a Nationwide Network<br /></strong></h2>
+               <h2><strong>PT. Umara Multi Bisnis</strong></h2>
+               <h5><strong>Perusahaan pendistribusian produk yang menjadi penghubung atau jembatan antara produsen kepada agen, merchant maupun konsumen akhir.<br /></strong></h5>
                <a href="about-us" class="btn-home">LEARN MORE</a>
             </div>
          </div>
          <div class="carousel-slide-cont">
-            <div class="carousel-slide-bg desktop" style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://www.tigaraksa.co.id/upload/carousel/0c6e7b2773a47b41e415ebf086e72fd1.jpg');"></div>
-            <div class="carousel-slide-bg mobile" style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://www.tigaraksa.co.id/upload/carousel/0c6e7b2773a47b41e415ebf086e72fd1.jpg');"></div>
+            <div class="carousel-slide-bg desktop" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.tigaraksa.co.id/upload/carousel/0c6e7b2773a47b41e415ebf086e72fd1.jpg');"></div>
+            <div class="carousel-slide-bg mobile" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.tigaraksa.co.id/upload/carousel/0c6e7b2773a47b41e415ebf086e72fd1.jpg');"></div>
             <img class="carousel-slide-img" src="https://www.tigaraksa.co.id/upload/carousel/0c6e7b2773a47b41e415ebf086e72fd1.jpg" />
             <div class="carousel-desc">
                <h1><span style="font-size: 36pt;"><strong>Our Principals<br /></strong></span><span style="font-size: 2pt;"><strong><span style="font-size: 18pt;">We present independent partners and operate an integrated nationwide network.</span></strong></span></h1>
@@ -25,16 +25,16 @@
             </div>
          </div>
          <div class="carousel-slide-cont">
-            <div class="carousel-slide-bg desktop" style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://www.tigaraksa.co.id/upload/carousel/b546e5396e386f00f461370181ad271c.jpg');"></div>
-            <div class="carousel-slide-bg mobile" style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://www.tigaraksa.co.id/upload/carousel/b546e5396e386f00f461370181ad271c.jpg');"></div>
+            <div class="carousel-slide-bg desktop" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.tigaraksa.co.id/upload/carousel/b546e5396e386f00f461370181ad271c.jpg');"></div>
+            <div class="carousel-slide-bg mobile" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.tigaraksa.co.id/upload/carousel/b546e5396e386f00f461370181ad271c.jpg');"></div>
             <img class="carousel-slide-img" src="https://www.tigaraksa.co.id/upload/carousel/b546e5396e386f00f461370181ad271c.jpg" />
             <div class="carousel-desc">
                <h1><span style="font-size: 36pt;"> <strong>Our Coverage<br /></strong> </span> <span style="font-size: 18pt;"> <strong>We maintain an in-depth national coverage&nbsp;</strong> <strong>through modern and general trade channels, covered directly and also through various business partnerships.</strong> </span></h1>
             </div>
          </div>
          <div class="carousel-slide-cont">
-            <div class="carousel-slide-bg desktop" style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://www.tigaraksa.co.id/upload/carousel/53224a341f7c1cc8a0635eadddf9df75.jpeg');"></div>
-            <div class="carousel-slide-bg mobile" style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://www.tigaraksa.co.id/upload/carousel/53224a341f7c1cc8a0635eadddf9df75.jpeg');"></div>
+            <div class="carousel-slide-bg desktop" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.tigaraksa.co.id/upload/carousel/53224a341f7c1cc8a0635eadddf9df75.jpeg');"></div>
+            <div class="carousel-slide-bg mobile" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.tigaraksa.co.id/upload/carousel/53224a341f7c1cc8a0635eadddf9df75.jpeg');"></div>
             <img class="carousel-slide-img" src="https://www.tigaraksa.co.id/upload/carousel/53224a341f7c1cc8a0635eadddf9df75.jpeg" />
             <div class="carousel-desc">
                <img src="https://www.tigaraksa.co.id/upload/carousel/icon/7428c7ff6a666190b84daeb397dbb322.png" class="home-icon" />

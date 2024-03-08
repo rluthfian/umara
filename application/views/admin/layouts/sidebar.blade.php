@@ -4,7 +4,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <img src="{{assets_url('images/logo_chevalier.png')}}" width="50" alt="">
         </div>
-        <div class="sidebar-brand-text mx-3">Chevalier Admin</div>
+        <div class="sidebar-brand-text mx-3">Umara Admin</div>
     </a>
 
     <!-- Divider -->
@@ -26,9 +26,9 @@
     </div>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="{{base_url('admin/dosens')}}">
+        <a class="nav-link collapsed" href="{{base_url('admin/cms/home')}}">
         <i class="fas fa-home"></i>
-            <span>Dosen</span>
+            <span>Home</span>
         </a>
     </li>
    
