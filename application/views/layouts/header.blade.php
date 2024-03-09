@@ -47,25 +47,30 @@
                      <div class="menu-item">
                         <a class="col" href="#">PRODUCT</a>
                         <div class="menu-item submenu">
-                            <ul class="list-menu">
+                           <ul class="list-menu">
 
                               <li>
                                  <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/about-us">Founder</a>
+                                    <a class="col" href="https://www.tigaraksa.co.id/about-us">Costumer Produk</a>
                                  </div>
                               </li>
                               <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/financial-performance">Company Profile</a>
+                                 <div class="menu-item">
+                                    <a class="col" href="https://www.tigaraksa.co.id/financial-performance">Produsen</a>
+                                    <div class="menu-item submenu">
+                                       <ul class="list-menu">
+                                          <li class="sub-menu-item"><a class="col" href="#">PT. Holy Cat Labs Indonesia</a></li>
+                                       </ul>
+                                    </div>
                                  </div>
                               </li>
                            </ul>
-                     </div>
+                        </div>
                   </li>
 
                   <li>
                      <div class="menu-item">
-                        <a class="col text-white" href="https://www.tigaraksa.co.id/contact-us">CONTACT US</a>
+                        <a class="col text-white" href="https://wa.me/6285171102858">CONTACT US</a>
                      </div>
                   </li>
 

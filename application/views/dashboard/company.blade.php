@@ -77,12 +77,13 @@
 
                 </div>
             </div>
-            <div class="row darker justify-content-center" id="core-values">
+            <div class="row darker justify-content-center" id="core-values" style="background-color: slateblue;">
                 <div class="col-xl-10 col-md-12">
 
                     <div class="row" style="background-color: slateblue;">
                         <div class="col-8" style="margin-top:5px; margin-bottom:20px;">
-                            <h1 class="title-content text-left">
+                            <h1 class="title-content text-left" style="color: #ffff
+                            ;">
                                 Konsultan & Diskusi </h1>
                             <p class="text-white">
                                 Sampaikan kebutuhan Anda kepada tim kami untuk
