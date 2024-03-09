@@ -37,4 +37,6 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['about'] = 'dashboard/about';
 $route['company'] = 'dashboard/company';
+$route['contact'] = 'dashboard/contact';
+$route['produsen'] = 'dashboard/produsen';
 

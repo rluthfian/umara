@@ -32,6 +32,14 @@ class Dashboard extends CI_Controller
 		return view ('dashboard/company');
 	}
 
+	public function contact(){
+		return view ('dashboard/contact');
+	}
+	
+	public function produsen(){
+		return view ('dashboard/detailprodusen');
+	}
+
 	public function penelitian()
 	{
 		return view('dashboard/penelitian');

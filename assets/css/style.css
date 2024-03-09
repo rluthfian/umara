@@ -223,7 +223,7 @@ span.red {
     font-family: "Gotham-Medium";
 }
 #main-menu-container .list-menu a {
-    color: #777;
+    color: #fff;
     text-decoration: none;
     letter-spacing: 1pt;
 }
@@ -269,7 +269,7 @@ span.red {
 #main-menu-container .menu-item.active a {
     position: relative;
     /* left: -40px; */
-    color: #19A44C;
+    color: #ffffff;
     font-style: italic;
     font-family: "Gotham-Bold";
 }
@@ -331,7 +331,7 @@ span.red {
 #main-menu-container .menu-item .submenu a {
     left: 0;
     font-family: "Gotham-Book";
-    color: #777;
+    color: #fff;
     font-style: normal;
     letter-spacing: 0;
     transition: all .2s;
@@ -666,6 +666,7 @@ span.red {
 }
 .bottom-content .title-content {
     width: 100%;
+    color: #007bff;
 }
 .bottom-content .line-small {
     border-top: 4px solid #03AD43;
