@@ -95,7 +95,7 @@
 
                         <li>
                             <div class="menu-item">
-                                <a class="col" href="https://www.tigaraksa.co.id">HOME</a>
+                                <a class="col" href="https://www.tigaraksa.co.id">kontol</a>
                             </div>
                         </li>
                         <li>
@@ -499,6 +499,9 @@
             contentReveal();
         });
 
+
+        //UNTUK MEMBUAT HALAMAN DARI INDEX KE INPUT DATA MENGGUNAKAN CMS
+        
         function contentReveal() {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             $('.bottom-content > div').each(function(i) {

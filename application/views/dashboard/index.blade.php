@@ -53,62 +53,146 @@
    </div>
    <div class="bottom-content">
 
-      <div>
-         <h1 class="title-content">
-            Business Units </h1>
-      </div>
-      <div class="row menu-cont">
+   <div class="bottom-content container-fluid" id="about-us">
+            <div class="row justify-content-center">
+                <div class="col-9 justify-content-center">
+                    <div class="row">
+                        <h1 class="title-content">
+                            Tentang Kami </h1>
+                        <p class="">PT. Umara Multi Bisnis merupakan perusahaan pendistribusian produk yang menjadi penghubung atau jembatan antara produsen kepada agen, merchant maupun konsumen akhir.​
 
-         <div class="col-sm">
-            <a class="menu-item" href="https://www.tigaraksa.co.id/consumer-product">
-               <div class="menu-ico-cont">
-                  <img src="https://www.tigaraksa.co.id/image/assets/Icons2-10.png" />
-               </div>
-               <h5 class="menu-item-text">
-                  Consumer Products </h5>
-            </a>
-         </div>
-         <div class="col-sm">
-            <a class="menu-item" href="https://www.tigaraksa.co.id/smart-family">
-               <div class="menu-ico-cont">
-                  <img src="https://www.tigaraksa.co.id/image/assets/Icons2-13.png" />
-               </div>
-               <h5 class="menu-item-text">
-                  Smart Family </h5>
-            </a>
-         </div>
-         <div class="col-sm">
-            <a class="menu-item" href="https://www.tigaraksa.co.id/lpg-refills">
-               <div class="menu-ico-cont">
-                  <img src="https://www.tigaraksa.co.id/image/assets/Icons2-12.png" />
-               </div>
-               <h5 class="menu-item-text">
-                  LPG Refills &<br>Kitchen Appliances </h5>
-            </a>
-         </div>
-         <div class="col-sm">
-            <a class="menu-item" href="https://www.tigaraksa.co.id/manufacturing-service">
-               <div class="menu-ico-cont">
-                  <img src="https://www.tigaraksa.co.id/image/assets/Icons2-11.png" />
-               </div>
-               <h5 class="menu-item-text">
-                  Manufacturing<br>Services </h5>
-            </a>
-         </div>
+                            PT. Umara Multi Bisnis telah berdiri secara resmi pada tanggal 11 Januari 2021, dan sudah menyebarkan berbagai macam produk ke seluruh Indonesia.</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="{{base_url('about')}}" class="custom-btn btn-7"><span style="letter-spacing:0.15em">Company Profile</span></a>
+                    </div>
+
+                    <div class="row">
+                        <div id="slide-timeline-cont">
+
+                            <div class="slide-timeline-item-cont">
+
+                                <div class="slide-item" data-num="0" style="flex: 0 1 calc(100%/6);">
+                                    <a href="#" class="timeline-item focus">
+                                        <div class="timeline-title">Visi</div>
+                                        <div class="timeline-ico"></div>
+                                        <div class="timeline-desc"></div>
+                                    </a>
+                                </div>
+                                <div class="slide-item" data-num="1" style="flex: 0 1 calc(100%/6);">
+                                    <a href="#" class="timeline-item ">
+                                        <div class="timeline-title">Misi</div>
+                                        <div class="timeline-ico"></div>
+                                        <div class="timeline-desc"></div>
+                                    </a>
+                                </div>
 
 
-         <div class="col-sm">
-            <a class="menu-item" href="https://www.tigaraksa.co.id/digital-platform">
-               <div class="menu-ico-cont">
-                  <img src="https://www.tigaraksa.co.id/image/assets/Icons2-14.png" />
-               </div>
-               <h5 class="menu-item-text">
-                  S & D Digital Platform </h5>
-            </a>
-         </div>
 
-      </div>
+                            </div>
+                        </div>
+                        <div id="slide-desc-cont" class="row">
+                            <div id="prev-ico">
+                                <a href="#">
+                                    <img src="https://www.tigaraksa.co.id/image/assets/Icons2-31.png" />
+                                </a>
+                            </div>
+                            <div id="slide-desc" class="col">
+                                <div class="slide-desc-text active" data-num="0">
+                                    <p class="p1">Menjadi Perusahaan yang unggul dan terdepan dalam pendistribusian kebutuhan hewan peliharaan di seluruh indonesia yang berkualitas tinggi.</p>
+                                </div>
+                                <div class="slide-desc-text text-left" style="font-size:1rem" data-num="1">
+                                    <ul>
+                                        <li>
+                                            Memberikan produk berkualitas dengan harga kompetitif dan bermanfaat demi memastikan kepuasan pelanggan dan membina hubungan baik dengan mitra berkelanjutan.
+                                        </li>
+                                        <li>
+                                            Merancang ekosistem terintegrasi yang dapat menyangga bisnis utama dalam perdagangan.
+                                        </li>
+                                        <li>
+                                            Melakukan perdagangan umum dan khusus untuk produk pangan maupun non pangan dengan sasaran pasar domestik hingga internasional.
+                                        </li>
+                                        <li>
+                                            Meningkatkan produktivitas, ketangkasan, dan kualitas kerja SDM lewat pelatihan dan pengembangan kompetensi.
+                                        </li>
+                                    </ul>
+                                </div>
 
+
+                            </div>
+                            <div id="next-ico">
+                                <a href="#">
+                                    <img src="https://www.tigaraksa.co.id/image/assets/Icons2-31.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row darker justify-content-center" id="core-values">
+                <div class="col-xl-10 col-md-12">
+
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="title-content">
+                                Produsen Kami </h1>
+                        </div>
+                    </div>
+                    <div class="row" id="cv-item-cont">
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="cv-item-ico">
+                                <img class="" src="https://umaramultibisnis.com/wp-content/uploads/2023/03/Logo-PT.-Holycat-Laboratory-Indonesia-2.jpg" />
+                            </div>
+                            <div class="cv-item-title">
+                                <h2 style="font-size: 1.5em;">
+                                    PT Holly Labs Indonesia
+                                </h2>
+                            </div>
+                            <div class="cv-item-desc">
+                                <p style="font-size: 1em;">
+                                    To ensure <br />we deliver our promise
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="cv-item-ico">
+                                <img src="https://umaramultibisnis.com/wp-content/uploads/2023/03/Logo-Fijarindo.jpg" />
+                            </div>
+                            <div class="cv-item-title">
+                                <h2 style="font-size: 1.5em;">
+                                    Fijarindo Fermented
+                                </h2>
+                            </div>
+                            <div class="cv-item-desc">
+                                <p style="font-size: 1em;">
+                                    To ensure <br />unbiased treatment
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="cv-item-ico">
+                                <img src="https://umaramultibisnis.com/wp-content/uploads/2023/03/your-logo-here-copy2.jpg" />
+                            </div>
+                            <div class="cv-item-title">
+                                <h2 style="font-size: 1.5em;">
+                                    Join With Us
+                                </h2>
+                            </div>
+                            <div class="cv-item-desc">
+                                <p style="font-size: 1em;">
+                                    To ensure <br />we always stay current and relevant
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
    </div>
 </div>
 

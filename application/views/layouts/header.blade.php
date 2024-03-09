@@ -36,111 +36,39 @@
 
                               <li>
                                  <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/about-us">BRIEF HISTORY & PHILOSOPHY</a>
+                                    <a class="col" href="https://www.tigaraksa.co.id/about-us">Founder</a>
                                  </div>
                               </li>
                               <li>
                                  <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/financial-performance">FINANCIAL PERFORMANCE</a>
+                                    <a class="col" href="{{base_url('company')}}">Company Profile</a>
                                  </div>
                               </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/our-principals">BUSINESS PARTNERS</a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/management-profile">MANAGEMENT</a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/corporate-social-responsibility">GOOD CORPORATE GOVERNANCE</a>
-                                 </div>
-                              </li>
-
                            </ul>
                         </div>
                      </div>
                   </li>
+
                   <li>
                      <div class="menu-item">
-                        <a class="col" href="#">BUSINESS UNITS</a>
+                        <a class="col" href="#">PRODUCT</a>
                         <div class="menu-item submenu">
-                           <ul class="list-menu">
+                            <ul class="list-menu">
 
                               <li>
                                  <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/consumer-product">CONSUMER PRODUCTS</a>
+                                    <a class="col" href="https://www.tigaraksa.co.id/about-us">Founder</a>
                                  </div>
                               </li>
                               <li>
                                  <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/smart-family">SMART FAMILY</a>
+                                    <a class="col" href="https://www.tigaraksa.co.id/financial-performance">Company Profile</a>
                                  </div>
                               </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/lpg-refills">LPG REFILLS & KITCHEN APPLIANCES</a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/manufacturing-service">MANUFACTURING SERVICES</a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/digital-platform">S & D DIGITAL PLATFORM</a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="http://tira-commerce.co.id/">TIRA COMMERCE</a>
-                                 </div>
-                              </li>
-
                            </ul>
-                        </div>
                      </div>
                   </li>
-                  <li>
-                     <div class="menu-item">
-                        <a class="col" href="#" data-toggle="modal" data-target="#modalCareer">CAREER</a>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="menu-item">
-                        <a class="col" href="#">INVESTOR INFO</a>
-                        <div class="menu-item submenu">
-                           <ul class="list-menu">
 
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/annual-financial-report">FINANCIAL & ANNUAL REPORT</a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/public-expose">PUBLIC EXPOSE</a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/newsletter">NEWSLETTER</a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/sustainability-report">SUSTAINABILITY REPORT</a>
-                                 </div>
-                              </li>
-
-                           </ul>
-                        </div>
-                     </div>
-                  </li>
                   <li>
                      <div class="menu-item">
                         <a class="col" href="https://www.tigaraksa.co.id/contact-us">CONTACT US</a>

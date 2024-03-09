@@ -588,7 +588,6 @@ span.red {
 .bottom-content {
     background-color: #f9f9f9;
     position: relative;
-    padding-bottom: 150px;
     overflow-x: hidden;
 }
 .clr-green{
@@ -615,7 +614,7 @@ span.red {
     margin: auto;
     padding: 30px 0;
     text-align: center;
-    color: #0cb353;
+    color: #ffffff;
     letter-spacing: 1.2pt;
 }
 .bottom-content .menu-cont {
@@ -923,14 +922,17 @@ span.red {
     margin: auto;
 }
 #about-us #core-values .cv-item-ico {
-    width: 60%;
+    width: 50%;
     /* height: 200px; */
     border-radius: 300px;
-    padding: 50px;
-    background-color: #FCB040;
+    /* padding: 50px; */
+    /* background-color: #FCB040; */
     margin-bottom: 30px !important;
     transition: all .5s;
     margin: auto;
+    overflow: hidden;
+    border: 0.5px solid rgb(104, 104, 104);
+
 }
 #about-us #core-values #cv-item-cont > div:hover .cv-item-ico {
     /* width: 210px;
@@ -942,7 +944,7 @@ span.red {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 #about-us #core-values #cv-item-cont > div:hover .cv-item-ico {
-    padding: 30px;
+    scale: 1.1;
     transition: all .5s;
 }
 #about-us #core-values .cv-item-ico img {
@@ -1987,7 +1989,7 @@ span.red {
 
     /* Home */
     .bottom-content .title-content {
-        width: 90%;
+        width: 100%;
     }
     .bottom-content .menu-ico-cont {
         width: 30vw;
