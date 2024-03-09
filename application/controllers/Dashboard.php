@@ -7,10 +7,17 @@ class Dashboard extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('dashboard_model');
+		$this->load->model('Home_model');
 	}
 	public function index()
 	{
-		return view('dashboard/index');
+		$slider = $this->Home_model->get_slider();
+
+		$data = [
+            'slider' => $slider
+        ];
+		
+		return view('dashboard/index',$data);
 	}
 	public function dosen()
 	{

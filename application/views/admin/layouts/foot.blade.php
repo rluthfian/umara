@@ -1,4 +1,3 @@
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.all.min.js"></script>
 <!-- Bootstrap core JavaScript-->
 <script src="{{assets_url('vendor/jquery/jquery.min.js')}}"></script>
@@ -11,3 +10,4 @@
 
 <!-- Page level plugins -->
 <script src="{{assets_url('vendor/chart.js/Chart.min.js')}}"></script>
+

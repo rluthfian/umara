@@ -9,13 +9,15 @@ class AdminController extends CI_Controller
 		$this->load->model('admin_model');
 		$this->load->library('session');
 		
-		if ($this->session->userdata('status') != "login") {
-			redirect(base_url("admin/login"));
-		}
+		
 	}
 	public function index()
 	{
-		return view('admin/index');
+		if ($this->session->userdata('status') != "login") {
+			redirect(base_url("admin/login"));
+		}else{
+			return view('admin/index');
+		}
 	}
 	public function login()
 	{
