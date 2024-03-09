@@ -2,7 +2,9 @@
 
 application/cache/*
 !application/cache/index.html
-
+.vscode/
+.vagrant/
+docker-compose.override.yml
 application/logs/*
 !application/logs/index.html
 

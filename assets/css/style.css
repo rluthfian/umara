@@ -194,7 +194,7 @@ span.red {
     height: 100vh;
     width: 40em;
     z-index: 100;
-    background-color: rgba(245,245,245,.95);
+    background-color: rgba(12,179,83,.90);
     opacity: 0;
     transform: translateX(1000px);
     transition: all .4s;
@@ -500,17 +500,13 @@ span.red {
 }
 .carousel-cont .carousel-desc {
     position: absolute;
-    /* background-color: rgba(255,255,255,.67); */
     font-family: "Gotham-Book", Arial;
-    /* bottom: 5em; */
-    bottom: 15%;
-    /* left: 1em; */
+    top: 15%;
     margin-left: 10%;
     font-size: 24px;
     letter-spacing: 1.2pt;
     color: #fff;
     max-width: 40em;
-    /* opacity: 0; */
     transition: all .3s;
 }
 .carousel-cont .carousel-desc.active {

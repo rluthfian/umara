@@ -2,10 +2,24 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="{{assets_url('css/sb-admin-2.min.css')}}" rel="stylesheet">
-  <link rel="stylesheet" href="{{assets_url('css/swiper-bundle.min.css')}}">
+  <!-- <link rel="stylesheet" href="{{assets_url('css/swiper-bundle.min.css')}}"> -->
   <link rel="stylesheet" href="{{assets_url('fonts/fonts.css')}}">
 
   <style>
+    .custom-file-upload {
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    .custom-file-upload input[type="file"] {
+      display: none;
+    }
+    .file-name {
+    color: #777;
+}
+
     .btn-ask-admin {
       background: #C39D27;
       border: none;

@@ -8,14 +8,15 @@ $route['auth/logout']['POST'] = 'auth/logout';
 // ADMIN RUOTES
 $route['admin'] = 'AdminController/index';
 $route['admin/login'] = 'AdminController/login';
-
 $route['tigaraksa'] = 'IndexController/index';
-// CRUD DOSEN
-$route['admin/dosens'] = 'AdminController/dosens';
-$route['admin/dosens/addDosen']['POST'] = 'AdminController/addDosen';
-$route['admin/dosens/editDosen/(:any)']['GET'] = 'AdminController/editDosen/$1';
-$route['admin/dosens/updateDosen/(:any)']['POST'] = 'AdminController/updateDosen/$1';
-$route['admin/dosens/deleteDosen/(:any)']['POST'] = 'AdminController/deleteDosen/$1';
+
+
+// CRUD ADMIN HOME
+$route['admin/cms/home'] = 'AdminHomeController/index';
+$route['admin/cms/home/add-slider']['POST'] = 'AdminHomeController/addSlider';
+$route['admin/cms/home/edit-slider/(:any)']['GET'] = 'AdminHomeController/editSlider/$1';
+$route['admin/cms/home/update-slider/(:any)']['POST'] = 'AdminHomeController/updateSlider/$1';
+$route['admin/cms/home/delete-slider/(:any)']['POST'] = 'AdminHomeController/deleteSlider/$1';
 
 // CRUD ARSIP
 $route['admin/arsip'] = 'ArsipController/arsip';

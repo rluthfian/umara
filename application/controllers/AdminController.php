@@ -7,25 +7,15 @@ class AdminController extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('admin_model');
-		$this->load->model('arsip_model');
 		$this->load->library('session');
+		
+		if ($this->session->userdata('status') != "login") {
+			redirect(base_url("admin/login"));
+		}
 	}
 	public function index()
 	{
-		if ($this->session->userdata('status') != "login") {
-			redirect(base_url("admin/login"));
-		} else {
-			$dosens = $this->admin_model->get_dosens();
-			$total_dosens = count($dosens);
-			$arsip = $this->arsip_model->get_arsip();
-			$total_arsip = count($arsip);
-			$data = [
-				'total_dosens' => $total_dosens,
-				'total_arsip' => $total_arsip,
-				'username' => $this->session->userdata("username"),
-			];
-			return view('admin/index',$data);
-		}
+		return view('admin/index');
 	}
 	public function login()
 	{
@@ -35,115 +25,115 @@ class AdminController extends CI_Controller
 
 		return view('admin/login', $data);
 	}
-	
+
 	// DOSEN CRUD
 
-	public function dosens()
-	{
-		$dosens = $this->admin_model->get_dosens();
-		$data = [
-			'dosens' => $dosens,
-			'username' => $this->session->userdata("username"),
-		];
+	// public function dosens()
+	// {
+	// 	$dosens = $this->admin_model->get_dosens();
+	// 	$data = [
+	// 		'dosens' => $dosens,
+	// 		'username' => $this->session->userdata("username"),
+	// 	];
 
-		return view('admin/dosens/index', $data);
-	}
-	public function addDosen()
-	{
-		$dataPost = $this->input->post();
-		
-		if (empty($dataPost['nip']) || empty($dataPost['name']) || empty($dataPost['pendidikan1']) || empty($dataPost['pendidikan2'])|| empty($dataPost['email'])|| empty($dataPost['password'])|| empty($dataPost['jabatan'])) {
-			echo json_encode(['status' => 'error', 'message' => 'Harap Isi Semua Data']);
-			return;
-		}
-		$config['upload_path']   = './assets/images/dosens/';
-		$config['allowed_types'] = 'gif|jpg|png';
-		$config['max_size']      = 100000; // Set your desired max size in kilobytes
-		$this->load->library('upload', $config);
+	// 	return view('admin/dosens/index', $data);
+	// }
+	// public function addDosen()
+	// {
+	// 	$dataPost = $this->input->post();
 
-		if ($this->upload->do_upload('foto')) {
-			$upload_data = $this->upload->data();
-			$file_name = $upload_data['file_name'];
-		} else {
-			echo json_encode(['status' => 'error', 'message' => $this->upload->display_errors()]);
-			return;
-		}
+	// 	if (empty($dataPost['nip']) || empty($dataPost['name']) || empty($dataPost['pendidikan1']) || empty($dataPost['pendidikan2'])|| empty($dataPost['email'])|| empty($dataPost['password'])|| empty($dataPost['jabatan'])) {
+	// 		echo json_encode(['status' => 'error', 'message' => 'Harap Isi Semua Data']);
+	// 		return;
+	// 	}
+	// 	$config['upload_path']   = './assets/images/dosens/';
+	// 	$config['allowed_types'] = 'gif|jpg|png';
+	// 	$config['max_size']      = 100000; // Set your desired max size in kilobytes
+	// 	$this->load->library('upload', $config);
 
-		$this->load->model('Admin_model');
-		$success = $this->Admin_model->addDosen([
-			'nip' => $dataPost['nip'],
-            'name' => $dataPost['name'],
-            'pendidikan1' => $dataPost['pendidikan1'],
-            'pendidikan2' => $dataPost['pendidikan2'],
-            'email' => $dataPost['email'],
-            'password' => $dataPost['password'],
-            'jabatan' => $dataPost['jabatan'],
-            'status' => $dataPost['status'],
-			'foto' => $file_name, // Use the file name here
-		]);
+	// 	if ($this->upload->do_upload('foto')) {
+	// 		$upload_data = $this->upload->data();
+	// 		$file_name = $upload_data['file_name'];
+	// 	} else {
+	// 		echo json_encode(['status' => 'error', 'message' => $this->upload->display_errors()]);
+	// 		return;
+	// 	}
 
-		if ($success) {
-			echo json_encode(['status' => 'success', 'message' => 'Dosen Add successfully']);
-		} else {
-			echo json_encode(['status' => 'error', 'message' => 'Failed to Add Dosen']);
-		}
-	}
-	public function editDosen($id)
-	{
-		$dosens = $this->admin_model->get_dosens();
-		$found_dosens = null;
-		foreach ($dosens as $dosen_item) {
-			if ($dosen_item->id == $id) {
-				$found_dosens = $dosen_item;
-				break; // Stop the loop once the article is found
-			}
-		}
-		$data = json_encode($found_dosens);
-		echo $data;
-	}
+	// 	$this->load->model('Admin_model');
+	// 	$success = $this->Admin_model->addDosen([
+	// 		'nip' => $dataPost['nip'],
+	//         'name' => $dataPost['name'],
+	//         'pendidikan1' => $dataPost['pendidikan1'],
+	//         'pendidikan2' => $dataPost['pendidikan2'],
+	//         'email' => $dataPost['email'],
+	//         'password' => $dataPost['password'],
+	//         'jabatan' => $dataPost['jabatan'],
+	//         'status' => $dataPost['status'],
+	// 		'foto' => $file_name, // Use the file name here
+	// 	]);
 
-	public function updateDosen($id)
-	{
-		$dataPost = $this->input->post();
-		if (empty($dataPost['nip']) || empty($dataPost['name']) || empty($dataPost['pendidikan1']) || empty($dataPost['pendidikan2'])|| empty($dataPost['email'])|| empty($dataPost['password'])|| empty($dataPost['jabatan'])) {
-			echo json_encode(['status' => 'error', 'message' => 'Harap Isi Semua Data']);
-			return;
-		}
+	// 	if ($success) {
+	// 		echo json_encode(['status' => 'success', 'message' => 'Dosen Add successfully']);
+	// 	} else {
+	// 		echo json_encode(['status' => 'error', 'message' => 'Failed to Add Dosen']);
+	// 	}
+	// }
+	// public function editDosen($id)
+	// {
+	// 	$dosens = $this->admin_model->get_dosens();
+	// 	$found_dosens = null;
+	// 	foreach ($dosens as $dosen_item) {
+	// 		if ($dosen_item->id == $id) {
+	// 			$found_dosens = $dosen_item;
+	// 			break; // Stop the loop once the article is found
+	// 		}
+	// 	}
+	// 	$data = json_encode($found_dosens);
+	// 	echo $data;
+	// }
 
-		$config['upload_path']   = './assets/images/dosens/';
-		$config['allowed_types'] = 'gif|jpg|png';
-		$config['max_size']      = 1024; // Set your desired max size in kilobytes
-		$this->load->library('upload', $config);
+	// public function updateDosen($id)
+	// {
+	// 	$dataPost = $this->input->post();
+	// 	if (empty($dataPost['nip']) || empty($dataPost['name']) || empty($dataPost['pendidikan1']) || empty($dataPost['pendidikan2'])|| empty($dataPost['email'])|| empty($dataPost['password'])|| empty($dataPost['jabatan'])) {
+	// 		echo json_encode(['status' => 'error', 'message' => 'Harap Isi Semua Data']);
+	// 		return;
+	// 	}
 
-		// Check if 'photo' index exists in $dataPost
-		if (isset($_FILES['foto']) && !empty($_FILES['foto']['name'])) {
-			if ($this->upload->do_upload('foto')) {
-				$upload_data = $this->upload->data();
-				$file_name = $upload_data['file_name'];
-				$dataPost['foto'] = $file_name; // Update 'photo' in $dataPost
-			} else {
-				echo json_encode(['status' => 'error', 'message' => $this->upload->display_errors()]);
-				return;
-			}
-		}
+	// 	$config['upload_path']   = './assets/images/dosens/';
+	// 	$config['allowed_types'] = 'gif|jpg|png';
+	// 	$config['max_size']      = 1024; // Set your desired max size in kilobytes
+	// 	$this->load->library('upload', $config);
 
-		$this->load->model('Admin_model');
-		$success = $this->Admin_model->updateDosenById($id, $dataPost);
-		if ($success) {
-			echo json_encode(['status' => 'success', 'message' => 'Dosen updated successfully']);
-		} else {
-			echo json_encode(['status' => 'error', 'message' => 'Failed to update Dosen']);
-		}
-	}
+	// 	// Check if 'photo' index exists in $dataPost
+	// 	if (isset($_FILES['foto']) && !empty($_FILES['foto']['name'])) {
+	// 		if ($this->upload->do_upload('foto')) {
+	// 			$upload_data = $this->upload->data();
+	// 			$file_name = $upload_data['file_name'];
+	// 			$dataPost['foto'] = $file_name; // Update 'photo' in $dataPost
+	// 		} else {
+	// 			echo json_encode(['status' => 'error', 'message' => $this->upload->display_errors()]);
+	// 			return;
+	// 		}
+	// 	}
 
-	public function deleteDosen($id)
-	{
-		$this->load->model('Admin_model');
-		$success = $this->Admin_model->deleteDosenById($id);
-		if ($success) {
-			echo json_encode(['status' => 'success']);
-		} else {
-			echo json_encode(['status' => 'error']);
-		}
-	}
+	// 	$this->load->model('Admin_model');
+	// 	$success = $this->Admin_model->updateDosenById($id, $dataPost);
+	// 	if ($success) {
+	// 		echo json_encode(['status' => 'success', 'message' => 'Dosen updated successfully']);
+	// 	} else {
+	// 		echo json_encode(['status' => 'error', 'message' => 'Failed to update Dosen']);
+	// 	}
+	// }
+
+	// public function deleteDosen($id)
+	// {
+	// 	$this->load->model('Admin_model');
+	// 	$success = $this->Admin_model->deleteDosenById($id);
+	// 	if ($success) {
+	// 		echo json_encode(['status' => 'success']);
+	// 	} else {
+	// 		echo json_encode(['status' => 'error']);
+	// 	}
+	// }
 }
