@@ -27,7 +27,6 @@
                         <a class="col text-white text-white" href="#">ABOUT US</a>
                         <div class="menu-item submenu">
                            <ul class="list-menu">
-
                               <li>
                                  <div class="sub-menu-item">
                                     <a class="col" href="https://www.tigaraksa.co.id/about-us">Founder</a>
