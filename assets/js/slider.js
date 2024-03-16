@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".carousel").slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     dots: true,
     infinite: true,
@@ -22,7 +22,7 @@ $(document).ready(function () {
     });
   });
   $(".ms-carousel").slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     dots: false,
     infinite: true,

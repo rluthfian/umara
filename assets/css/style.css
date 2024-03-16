@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 10px 10px -5px rgb(255,255,255,0.1);
+  box-shadow: 0 10px 10px -5px rgb(255, 255, 255, 0.1);
   transition: all 0.3s;
   z-index: 10px;
 }
@@ -65,7 +65,7 @@ body {
   transition: all 0.3s ease-out;
 }
 .social-menu .social-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 8px;
   height: 8px;
@@ -75,8 +75,7 @@ body {
   transform: rotate(45deg);
   left: 20%;
   z-index: -2;
-  transition: 
-    all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .social-menu .social-btn:hover::before {
   top: -45px;
@@ -118,7 +117,6 @@ body {
 .linkedin:hover .social-btn:after {
   background: #0072b1;
 }
-
 
 #section10 {
   padding-top: 200px;
@@ -368,7 +366,8 @@ span.red {
   height: 0%;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0);
-  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1), background-color 0s cubic-bezier(0.4, 0, 0.2, 1); /* Tambahkan transisi untuk width dan height */
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0s cubic-bezier(0.4, 0, 0.2, 1); /* Tambahkan transisi untuk width dan height */
 }
 
 #main-menu-container.active {
@@ -708,7 +707,7 @@ span.red {
   height: 70vh;
   display: flex;
 }
-#about-us .main-title{
+#about-us .main-title {
   color: #073068 !important;
 }
 .carousel .carousel-slide-bg {
@@ -818,8 +817,8 @@ span.red {
   position: relative;
   overflow-x: hidden;
 }
-.bg-gray-f9{
-  background-color: #f9f9f9!important;
+.bg-gray-f9 {
+  background-color: #f9f9f9 !important;
 }
 .clr-green {
   font-size: 20px !important;
@@ -2175,7 +2174,7 @@ span.red {
     margin-left: 5px;
   }
   .header-top .trs-logo img {
-    width: 15em;
+    width: 6em;
     left: 0;
   }
   /* END Header Top */
@@ -3058,129 +3057,56 @@ span.red {
 .btn-home:hover {
   text-decoration: unset !important;
 }
-
-@media (max-width: 768px) {
-  .jumbotron-desc h1 {
-    font-size: 1em !important;
-    line-height: 27px !important;
-  }
-  .header-jumbotron .jumbotron-background {
-    background-size: 100% 340px !important;
-    background-repeat: no-repeat;
-  }
-  .header-top .header-container {
-    background-color: rgb(149, 149, 149, 0.1);
-  }
-  .carousel {
-    height: 420px;
-  }
+@media screen and (max-width: 600px) {
   .carousel-cont {
-    height: 420px;
+    height: 50vh;
     display: flex;
-  }
-  .carousel-cont .carousel-desc {
-    bottom: 3.5em !important;
-    width: 80vw !important;
-  }
-  .carousel-title {
-    font-size: 24pt !important;
-  }
-  .carousel-subtitle {
-    font-size: 11pt !important;
-    margin-bottom: 14px;
-  }
-  .carousel .carousel-slide-bg {
-    background-size: 100% 315px !important;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   .carousel .carousel-slide-cont {
-    height: 420px;
+    height: 50vh;
+  }
+  .slick-slider {
+    height: 50vh;
   }
   .carousel:hover .slick-prev {
-    left: 2px;
+    left: 5px;
   }
   .carousel:hover .slick-next {
-    right: 2px;
+    right: 5px;
   }
-  .carousel-desc h1 {
-    font-size: 2rem;
-  }
-  .carousel-desc h1 span {
-    font-size: 15pt;
-  }
-  .carousel-desc span {
-    font-size: 12pt !important;
-  }
-  .carousel-desc h2 {
-    font-size: 12pt !important;
-  }
-  .carousel-desc .home-icon {
-    width: 15%;
-  }
-  .header-jumbotron {
-    height: 48vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-  }
-}
-
-@media (max-width: 430px) {
-  .header-jumbotron {
-    height: 38vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-  }
-  .carousel-slide-bg.desktop {
-    display: none;
-  }
-  .carousel-slide-bg.mobile {
-    display: block;
-  }
-  .carousel .carousel-slide-bg {
-    background-size: 100% 220px !important;
-    background-position: initial !important;
-    background-repeat: no-repeat;
-    margin-top: 76px;
-  }
-  .carousel-cont {
-    height: 360px;
-    display: flex;
-  }
-  .carousel-subtitle {
-    font-size: 11pt !important;
-    margin-bottom: 17px;
-    width: 360px;
-  }
-  .carousel-desc h2 {
-    font-size: 8pt !important;
-  }
-  .carousel-desc p span {
-    font-size: 8pt !important;
-  }
-  .carousel-desc span {
-    font-size: 8pt !important;
-  }
-  .carousel-title {
-    font-size: 21pt !important;
+  .carousel .slick-arrow:before {
+    font-size: 25px;
   }
   .carousel-cont .carousel-desc {
-    bottom: 6em !important;
+    padding: 0;
+  }
+  .carousel-desc h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-desc h5 {
+    font-size: 1rem;
   }
   .btn-home {
-    font-size: 8px;
-    padding: 10px 20px 10px 20px !important;
+    padding: 10px 25px 10px 25px !important;
   }
-  .header-jumbotron .jumbotron-background {
-    background-size: 100% 278px !important;
+  #about-us #core-values #cv-item-cont {
+    margin: 50px 0 50px 0;
   }
-  .carousel-cont .carousel-desc * {
-    line-height: 0.7rem;
+  #about-us #slide-desc {
+    width: 80vw;
   }
-  .img {
-    float: left;
-    width: 332px;
-    height: 280px;
-    background-size: cover;
+  #about-us #slide-timeline-cont {
+    margin-bottom: 0px;
+  }
+  #about-us .slide-desc-text {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  #about-us .btn-home {
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
   }
 }

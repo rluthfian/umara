@@ -15,7 +15,7 @@
                     <h1><strong>{{$value->title}}</strong></h1>
                     <h5 class="mb-3"><strong>{{$value->content}}<br /></strong></h5>
                     <a href="about-us" class="btn-home">LEARN MORE</a>
-                    <section id="section10" class="demo">
+                    <section id="section10" class="demo d-none d-md-block">
                         <a class="scroll-more"><span></span></a>
                     </section>
                 </div>
@@ -40,7 +40,7 @@
                             </div>
 
                             <div class="row justify-content-center" id="cv-item-cont">
-                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="col-12 col-md-6 col-lg-4">
                                     <div class="cv-item-ico">
                                         <img class="" src="https://umaramultibisnis.com/wp-content/uploads/2023/03/Logo-PT.-Holycat-Laboratory-Indonesia-2.jpg" />
                                     </div>
@@ -56,7 +56,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="col-12 col-md-6 col-lg-4">
                                     <div class="cv-item-ico">
                                         <img src="https://umaramultibisnis.com/wp-content/uploads/2023/03/Logo-Fijarindo.jpg" />
                                     </div>
@@ -71,7 +71,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="col-12 col-md-6 col-lg-4">
                                     <div class="cv-item-ico">
                                         <img src="https://umaramultibisnis.com/wp-content/uploads/2023/03/Logo-PT.-Garuda-Parahita-Pharama-300x300.jpg" />
                                     </div>
