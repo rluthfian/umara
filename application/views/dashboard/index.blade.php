@@ -7,7 +7,7 @@
     <div class="carousel-cont">
         <div class="carousel">
             @foreach($slider as $value)
-            <div class="carousel-slide-cont">
+            <div class="carousel-slide-cont d-flex justify-content-center">
                 <div class="carousel-slide-bg desktop" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('{{assets_url('images/cms/home/')}}{{$value->photo}}');"></div>
                 <div class="carousel-slide-bg mobile" style="background-size: cover;background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('{{assets_url('images/cms/home/')}}{{$value->photo}}');"></div>
                 <img class="carousel-slide-img" src="{{assets_url('images/cms/home/')}}{{$value->photo}}" />
@@ -15,6 +15,9 @@
                     <h1><strong>{{$value->title}}</strong></h1>
                     <h5 class="mb-3"><strong>{{$value->content}}<br /></strong></h5>
                     <a href="about-us" class="btn-home">LEARN MORE</a>
+                    <section id="section10" class="demo">
+                        <a class="scroll-more"><span></span></a>
+                    </section>
                 </div>
             </div>
             @endforeach
@@ -32,7 +35,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-12">
-                                    <h1 class="title-content pt-5">Produsen Kami </h1>
+                                    <h1 class="title-content pt-5">Our Partnership </h1>
                                 </div>
                             </div>
 
@@ -81,14 +84,6 @@
                                         <p style="font-size: 1em;">
                                             To ensure <br />unbiased treatment
                                         </p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-4 py-3">
-                                    <div class="cv-item-ico">
-                                        <img src="https://umaramultibisnis.com/wp-content/uploads/2023/03/your-logo-here-copy2.jpg" />
-                                    </div>
-                                    <div class="cv-item-title d-flex justify-content-center">
-                                        <a href="about-us" class="btn-home bounce">JOIN WITH US</a>
                                     </div>
                                 </div>
                             </div>

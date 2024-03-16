@@ -21,9 +21,9 @@
                      <p>X</p>
                   </a>
                </div>
-               <div class="container-fluid">
-                  <div class="row">
-                     <div class="col-12">
+               <div class="container-fluid" style="height: 100%;">
+                  <div class="row" style="height: 100%;">
+                     <div class="col-12 mb-auto">
                         <ul class="list-menu">
                            <li>
                               <div class="menu-item">
@@ -32,8 +32,8 @@
                            </li>
                            <li>
                               <div class="menu-item">
-                                 <a class="col" href="#">ABOUT US</a>
-                                 <div class="menu-item submenu">
+                                 <a class="col" href="{{base_url('about')}}">ABOUT US</a>
+                                 <!-- <div class="menu-item submenu">
                                     <ul class="list-menu">
                                        <li>
                                           <div class="sub-menu-item">
@@ -46,7 +46,7 @@
                                           </div>
                                        </li>
                                     </ul>
-                                 </div>
+                                 </div> -->
                               </div>
                            </li>
 
@@ -83,16 +83,32 @@
 
                         </ul>
                      </div>
+                     <div class="col-12 d-flex align-items-end">
+                        <div class="w-100 text-center">
+                           <h2>Find us!</h2>
+                           <ul class="social-menu">
+                              <li class="social-btn facebook" tooltip="Facebook">
+                                 <a href="#"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+                              </li>
+                              <li class="social-btn instagram" tooltip="Instagram">
+                                 <a href="#"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+                              </li>
+                              <li class="social-btn pinterest" tooltip="Pinterest">
+                                 <a href="#"><ion-icon name="logo-pinterest" size="large"></ion-icon></a>
+                              </li>
+                              <li class="social-btn linkedin" tooltip="LinkedIn">
+                                 <a href="#"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
+                              </li>
+                           </ul>
+                        </div>
+
+                     </div>
                   </div>
                </div>
 
 
             </div>
          </div>
-         <!-- <div class="col-12">
-            ewe
-         </div> -->
-
       </div>
    </div>
 </section>

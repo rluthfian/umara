@@ -26,17 +26,17 @@ $route['admin/arsip/updateArsip/(:any)']['POST'] = 'ArsipController/updateArsip/
 $route['admin/arsip/deleteArsip/(:any)']['POST'] = 'ArsipController/deleteArsip/$1';
 
 // DASHBOARD ROUTES
-$route['default_controller'] = 'dashboard';
-$route['dosen'] = 'dashboard/dosen';
-$route['penelitian'] = 'dashboard/penelitian';
-$route['pengmas'] = 'dashboard/pengmas';
-$route['aset-lab'] = 'dashboard/asset_lab';
-$route['info-publikasi'] = 'dashboard/info_publikasi';
-$route['arsip'] = 'dashboard/arsip';
+$route['default_controller'] = 'DashboardController';
+$route['dosen'] = 'DashboardController/dosen';
+$route['penelitian'] = 'DashboardController/penelitian';
+$route['pengmas'] = 'DashboardController/pengmas';
+$route['aset-lab'] = 'DashboardController/asset_lab';
+$route['info-publikasi'] = 'DashboardController/info_publikasi';
+$route['arsip'] = 'DashboardController/arsip';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['about'] = 'dashboard/about';
-$route['company'] = 'dashboard/company';
-$route['contact'] = 'dashboard/contact';
-$route['produsen'] = 'dashboard/produsen';
+$route['about'] = 'DashboardController/about';
+$route['company'] = 'DashboardController/company';
+$route['contact'] = 'DashboardController/contact';
+$route['produsen'] = 'DashboardController/produsen';
 
