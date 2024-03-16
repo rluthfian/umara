@@ -102,17 +102,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-9 justify-content-center">
-                    <h1 class="title-content pt-5">Our Mission </h1>
-                    <!-- <div class="row">
-                        <h1 class="title-content font-weight-bold">Tentang Kami </h1>
-                        <p class="">PT. Umara Multi Bisnis merupakan perusahaan pendistribusian produk yang menjadi penghubung atau jembatan antara produsen kepada agen, merchant maupun konsumen akhir.​
-
-                            PT. Umara Multi Bisnis telah berdiri secara resmi pada tanggal 11 Januari 2021, dan sudah menyebarkan berbagai macam produk ke seluruh Indonesia.</p>
-                    </div> -->
-                    <!-- <div class="text-center">
-                        <a href="{{base_url('about')}}" class="custom-btn btn-7"><span style="letter-spacing:0.15em">Company Profile</span></a>
-                    </div> -->
-
+                    <h1 class="title-content pt-5">Our Vision & Mission </h1>
                     <div class="row">
                         <div id="slide-timeline-cont">
                             <div class="slide-timeline-item-cont">
@@ -146,21 +136,8 @@
                                 <div class="slide-desc-text active" data-num="0">
                                     <p class="p1">Menjadi Perusahaan yang unggul dan terdepan dalam pendistribusian kebutuhan hewan peliharaan di seluruh indonesia yang berkualitas tinggi.</p>
                                 </div>
-                                <div class="slide-desc-text text-left" style="font-size:1rem" data-num="1">
-                                    <ul>
-                                        <li>
-                                            Memberikan produk berkualitas dengan harga kompetitif dan bermanfaat demi memastikan kepuasan pelanggan dan membina hubungan baik dengan mitra berkelanjutan.
-                                        </li>
-                                        <li>
-                                            Merancang ekosistem terintegrasi yang dapat menyangga bisnis utama dalam perdagangan.
-                                        </li>
-                                        <li>
-                                            Melakukan perdagangan umum dan khusus untuk produk pangan maupun non pangan dengan sasaran pasar domestik hingga internasional.
-                                        </li>
-                                        <li>
-                                            Meningkatkan produktivitas, ketangkasan, dan kualitas kerja SDM lewat pelatihan dan pengembangan kompetensi.
-                                        </li>
-                                    </ul>
+                                <div class="slide-desc-text text-left" data-num="1">
+                                    <p class="p1">Memberikan produk berkualitas dengan harga kompetitif dan bermanfaat demi memastikan kepuasan pelanggan dan membina hubungan baik dengan mitra berkelanjutan.</p>
                                 </div>
 
 

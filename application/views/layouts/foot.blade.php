@@ -44,10 +44,10 @@
                 ev.preventDefault();
 
                 if ($(this).closest(".menu-item").hasClass("active")) {
-                    $(".list-menu-cont > .list-menu > li > .menu-item").removeClass("active");
+                    $(".list-menu-cont > .container-fluid > .row  > .col-12 > .list-menu > li > .menu-item").removeClass("active");
                     return false;
                 }
-                $(".list-menu-cont > .list-menu > li > .menu-item").removeClass("active");
+                $(".list-menu-cont > .container-fluid > .row  > .col-12 > .list-menu > li > .menu-item").removeClass("active");
 
                 $(this).closest(".menu-item").addClass("active");
             }
