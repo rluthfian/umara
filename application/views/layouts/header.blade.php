@@ -35,20 +35,9 @@
                                  <a class="col" href="#">PRODUCT</a>
                                  <div class="menu-item submenu">
                                     <ul class="list-menu">
-
                                        <li>
                                           <div class="sub-menu-item">
-                                             <a class="col" href="https://www.tigaraksa.co.id/about-us">Costumer Produk</a>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <div class="menu-item">
-                                             <a class="col" href="https://www.tigaraksa.co.id/financial-performance">Produsen</a>
-                                             <div class="menu-item submenu">
-                                                <ul class="list-menu">
-                                                   <li class="sub-menu-item"><a class="col" href="#">PT. Holy Cat Labs Indonesia</a></li>
-                                                </ul>
-                                             </div>
+                                             <a class="col" href="{{base_url('produsen')}}">PRODUSEN</a>
                                           </div>
                                        </li>
                                     </ul>
@@ -104,63 +93,62 @@
                         </div>
 
                      </div>
-<<<<<<< HEAD
-                  </li>
+                     <<<<<<< HEAD </li>
 
-                  <li>
-                     <div class="menu-item">
-                        <a class="col" href="#">PRODUCT</a>
-                        <div class="menu-item submenu">
-                           <ul class="list-menu">
+                        <li>
+                           <div class="menu-item">
+                              <a class="col" href="#">PRODUCT</a>
+                              <div class="menu-item submenu">
+                                 <ul class="list-menu">
 
-                              <li>
-                                 <div class="sub-menu-item">
-                                    <a class="col" href="{{base_url('product')}}">Costumer Produk</a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <div class="menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/financial-performance">Produsen</a>
-                                    <div class="menu-item submenu">
-                                       <ul class="list-menu">
-                                          <li class="sub-menu-item"><a class="col" href="#">PT. Holy Cat Labs Indonesia</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </li>
-                           </ul>
-                        </div>
-                  </li>
+                                    <li>
+                                       <div class="sub-menu-item">
+                                          <a class="col" href="{{base_url('product')}}">Costumer Produk</a>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="menu-item">
+                                          <a class="col" href="https://www.tigaraksa.co.id/financial-performance">Produsen</a>
+                                          <div class="menu-item submenu">
+                                             <ul class="list-menu">
+                                                <li class="sub-menu-item"><a class="col" href="#">PT. Holy Cat Labs Indonesia</a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                        </li>
 
-                  <li>
-                     <div class="menu-item">
-                        <a class="col text-white" href="https://wa.me/6285171102858">CONTACT US</a>
-                     </div>
-                  </li>
+                        <li>
+                           <div class="menu-item">
+                              <a class="col text-white" href="https://wa.me/6285171102858">CONTACT US</a>
+                           </div>
+                        </li>
 
-               </ul>
-            </div>
-            <div class="menu-copyright">
-               <div class="row">
-                  <div class="col text-white">
-                     <a href="https://www.tigaraksa.co.id/legal-notice">
-                        <p>
-                           LEGAL NOTICE </p>
-                     </a>
+                        </ul>
                   </div>
-                  <div class="col text-white">
-                     <a href="https://www.tigaraksa.co.id/privacy-statements">
-                        <p>
-                           PRIVACY STATEMENT </p>
-                     </a>
-=======
->>>>>>> cae2a6a5e77b914a7569505a2a1a09e39ed218b0
+                  <div class="menu-copyright">
+                     <div class="row">
+                        <div class="col text-white">
+                           <a href="https://www.tigaraksa.co.id/legal-notice">
+                              <p>
+                                 LEGAL NOTICE </p>
+                           </a>
+                        </div>
+                        <div class="col text-white">
+                           <a href="https://www.tigaraksa.co.id/privacy-statements">
+                              <p>
+                                 PRIVACY STATEMENT </p>
+                           </a>
+                           =======
+                           >>>>>>> cae2a6a5e77b914a7569505a2a1a09e39ed218b0
+                        </div>
+                     </div>
+
+
                   </div>
                </div>
-
-
             </div>
          </div>
-      </div>
-   </div>
 </section>

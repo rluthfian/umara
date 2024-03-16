@@ -44,7 +44,7 @@ class DashboardController extends CI_Controller
 	}
 	
 	public function produsen(){
-		return view ('dashboard/detailprodusen');
+		return view ('dashboard/produsen');
 	}
 
 	public function penelitian()
