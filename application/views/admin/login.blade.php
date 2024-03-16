@@ -4,13 +4,13 @@
 <head>
 
     <meta charset="utf-8">
-    <link rel="icon" href="{{ assets_url('images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ assets_url('images/icons/cropped-favicon-32x32.png') }}" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login Chevalier Admin</title>
+    <title>Login Umara Admin</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{assets_url('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -51,12 +51,12 @@
                         <!-- Nested Row within Card Body -->
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block bg-login-image">
-                                <img src="{{assets_url('images/logo_chevalier.png')}}" class=" p-5 img-fluid" alt="">
+                                <img src="{{assets_url('images/icons/logo-1.png')}}" class=" p-5 img-fluid" style="width: 100%;" alt="">
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Login Admin Chevalier</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Login Admin Umara</h1>
                                     </div>
                                     <form class="user" action="{{base_url('auth/aksi_login')}}" method="post">
                                         <div class="form-group">

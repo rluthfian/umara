@@ -92,8 +92,11 @@
                             </p>
 
                         </div>
-                        <div class="col-4 justify-content-center modal-dialog-centered">
-                            <a href="https://wa.me/6285171102858" class="btn-home">HUBUNGI KAMI</a>
+
+                        <div class="col-4 align-items-center d-flex justify-content-center" style="margin-bottom:0.5rem; border-radius:10px; margin-top:0.5rem">
+                            <div class="container-button" style="background-color:white; ">
+                                <a class="call-us" style="letter-spacing: 4px;">HUBUNGI KAMI</a>
+                            </div>
                         </div>
 
 

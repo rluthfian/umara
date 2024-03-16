@@ -44,10 +44,10 @@
                 ev.preventDefault();
 
                 if ($(this).closest(".menu-item").hasClass("active")) {
-                    $(".list-menu-cont > .list-menu > li > .menu-item").removeClass("active");
+                    $(".list-menu-cont > .container-fluid > .row  > .col-12 > .list-menu > li > .menu-item").removeClass("active");
                     return false;
                 }
-                $(".list-menu-cont > .list-menu > li > .menu-item").removeClass("active");
+                $(".list-menu-cont > .container-fluid > .row  > .col-12 > .list-menu > li > .menu-item").removeClass("active");
 
                 $(this).closest(".menu-item").addClass("active");
             }
@@ -65,12 +65,13 @@
 
 <script>
     $(document).ready(function() {
-        $(document).on('click', '.down-button', function(ev) {
+        $(document).on('click', '.scroll-more', function(ev) {
             ev.preventDefault();
             $("html, body").animate({
-                scrollTop: $(document).height()
-            }, 300);
+                scrollTop: '+=700' // Ubah nilai ini sesuai keinginan Anda
+            }, 600); // Ubah durasi animasi jika perlu
         });
+
 
         $(window).scroll(function() {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -114,7 +115,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <!-- <script src="/js/slick.min.js"></script> -->
-<script src="https://www.tigaraksa.co.id/js/slider.js"></script>
 
 
 <script>
