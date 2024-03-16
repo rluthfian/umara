@@ -39,4 +39,5 @@ $route['about'] = 'dashboard/about';
 $route['company'] = 'dashboard/company';
 $route['contact'] = 'dashboard/contact';
 $route['produsen'] = 'dashboard/produsen';
+$route['product'] = 'dashboard/product';
 

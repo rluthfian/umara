@@ -50,7 +50,7 @@
 
                               <li>
                                  <div class="sub-menu-item">
-                                    <a class="col" href="https://www.tigaraksa.co.id/about-us">Costumer Produk</a>
+                                    <a class="col" href="{{base_url('product')}}">Costumer Produk</a>
                                  </div>
                               </li>
                               <li>

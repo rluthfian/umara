@@ -12,7 +12,7 @@
                     <img src="https://www.tigaraksa.co.id/upload/carousel/icon/9e289a327a3fdd650da5b300c2486df9.png" class="home-icon" />
                     <h2><strong>An Independent Sales and Distribution </strong></h2>
                     <h2><strong>Company with a Nationwide Network<br /></strong></h2>
-                    <a href="about-us" class="btn-home">LEARN MORE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,</a>
+                    <a href="about-us" class="btn-home">LEARN MORE</a>
                 </div>
             </div>
             <div class="carousel-slide-cont">
@@ -55,11 +55,11 @@
 
         <div class="bottom-content container-fluid" id="about-us">
             <div class="row justify-content-center">
-                <div class="col-9 justify-content-center">
+                <div class="col-9 justify-content-center" style="padding-top:20px; padding-bottom:10px;">
                     <div class="row">
                         <h1 class="title-content">
                             Identitas Perusahaan </h1>
-                        <p class="text-justify" style="line-height:2rem;">PT. Umara Multi Bisnis merupakan perusahaan pendistribusian
+                        <p class="text-justify" style="line-height:2rem; padding-top:10px">PT. Umara Multi Bisnis merupakan perusahaan pendistribusian
 
                             produk yang menjadi penghubung atau jembatan antara produsen kepada agen, merchant maupun konsumen akhir.​
 
@@ -92,7 +92,8 @@
                             </p>
 
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 justify-content-center modal-dialog-centered">
+                            <a href="https://wa.me/6285171102858" class="btn-home">HUBUNGI KAMI</a>
                         </div>
 
 
