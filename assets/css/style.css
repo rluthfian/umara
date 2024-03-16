@@ -364,15 +364,16 @@ span.red {
   padding-left: 2.5rem;
   padding-right: 2rem;
   right: -110%; /* Hide the menu by default */
-  width: 100vw;
-  height: 100vh;
+  width: 0%;
+  height: 0%;
   z-index: 100;
-  /* background-color: rgba(12, 179, 83, 0.5); */
   background-color: rgba(0, 0, 0, 0);
-  transition: right 0s ease; /* Add transition for smooth animation */
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1), background-color 0s cubic-bezier(0.4, 0, 0.2, 1); /* Tambahkan transisi untuk width dan height */
 }
 
 #main-menu-container.active {
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   right: 0;
   opacity: 1;
@@ -388,13 +389,12 @@ span.red {
 }
 
 #main-menu-container .list-menu-cont {
-  width: 1px;
+  width: 0%;
   right: 0;
-  height: 1px;
+  height: 0%;
   border-radius: 20px;
   position: absolute;
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
-  flex: 1;
   overflow: hidden;
 }
 #main-menu-container.active .list-menu-cont {
@@ -410,10 +410,10 @@ span.red {
   text-align: center;
   z-index: 99999;
   background-color: white;
+  transition: 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 #main-menu-container.active .main-menu-close {
   opacity: 1;
-  transition: 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 #main-menu-container .list-menu {
   list-style-type: none;
@@ -708,6 +708,9 @@ span.red {
   height: 70vh;
   display: flex;
 }
+#about-us .main-title{
+  color: #073068 !important;
+}
 .carousel .carousel-slide-bg {
   height: 100%;
   width: 100%;
@@ -815,6 +818,9 @@ span.red {
   position: relative;
   overflow-x: hidden;
 }
+.bg-gray-f9{
+  background-color: #f9f9f9!important;
+}
 .clr-green {
   font-size: 20px !important;
 }
@@ -921,7 +927,7 @@ span.red {
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 15em;
+  height: 10em;
   overflow-x: hidden;
 }
 /* #about-us #slide-timeline-cont > .row > .col {
@@ -964,7 +970,7 @@ span.red {
   width: 35px;
   height: 35px;
   border-radius: 100px;
-  background-color: #fcb040;
+  background-color: #073068;
   /* margin: auto; */
   transition: all 0.3s;
   position: relative;
@@ -972,7 +978,7 @@ span.red {
 }
 #about-us #timeline-line {
   position: absolute;
-  border-top: 1px solid #fcb040;
+  border-top: 1px solid #073068;
   width: 100%;
 }
 #about-us #slide-timeline-cont .timeline-item .timeline-ico img {
@@ -1007,7 +1013,7 @@ span.red {
 #about-us #slide-desc-cont {
   align-items: center;
   margin: auto;
-  margin-bottom: 10em;
+  margin-bottom: 3em;
 }
 #about-us #slide-desc-cont #next-ico img,
 #about-us #slide-desc-cont #prev-ico img {

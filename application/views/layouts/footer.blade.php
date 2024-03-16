@@ -10,7 +10,7 @@
                 <h3>Contact Us</h3>
                 <ul>
                     <li><a class="text-dark" href="https://maps.app.goo.gl/m6RskC4jUG95DZZu8" target="_blank"><i class="fas fa-map-marker-alt"></i> Topaz Commercial No 62 Summarecon, Cisantren Kidul, Kec. Gedebage, Kota Bandung, Jawa Barat</a></li>
-                    <li><a class="text-dark" href="https://wa.me/+6285171102858" target="_blank"><i class="fab fa-whatsapp"></i> +62 851-7110-2858</a></li>
+                    <li><a class="text-dark" href="https://wa.me/6285171102858" target="_blank"><i class="fab fa-whatsapp"></i> +62 851-7110-2858</a></li>
                     <li><a class="text-dark" href="mailto:ptumaramultibisnis@yahoo.com"><i class="fas fa-envelope"></i> ptumaramultibisnis@yahoo.com</a></li>
                 </ul>
             </div>

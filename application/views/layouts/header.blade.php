@@ -32,26 +32,6 @@
                            </li>
                            <li>
                               <div class="menu-item">
-                                 <a class="col" href="{{base_url('about')}}">ABOUT US</a>
-                                 <!-- <div class="menu-item submenu">
-                                    <ul class="list-menu">
-                                       <li>
-                                          <div class="sub-menu-item">
-                                             <a class="col" href="{{base_url('about')}}">Founder</a>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <div class="sub-menu-item">
-                                             <a class="col" href="{{base_url('company')}}">Company Profile</a>
-                                          </div>
-                                       </li>
-                                    </ul>
-                                 </div> -->
-                              </div>
-                           </li>
-
-                           <li>
-                              <div class="menu-item">
                                  <a class="col" href="#">PRODUCT</a>
                                  <div class="menu-item submenu">
                                     <ul class="list-menu">
@@ -74,10 +54,31 @@
                                     </ul>
                                  </div>
                            </li>
+                           <li>
+                              <div class="menu-item">
+                                 <a class="col" href="#">OUR COMPANY</a>
+                                 <div class="menu-item submenu">
+                                    <ul class="list-menu">
+                                       <li>
+                                          <div class="sub-menu-item">
+                                             <a class="col" href="{{base_url('about')}}">About Us</a>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="sub-menu-item">
+                                             <a class="col" href="{{base_url('certificate')}}">Certificate</a>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </li>
+
+
 
                            <li>
                               <div class="menu-item">
-                                 <a class="col" href="https://wa.me/6285171102858">CONTACT US</a>
+                                 <a class="col" target="_blank" href="https://wa.me/6285171102858">CONTACT US</a>
                               </div>
                            </li>
 
